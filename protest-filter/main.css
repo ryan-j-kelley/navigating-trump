@@ -59,6 +59,10 @@ table {
 
 /* Start your base/mobile styles here */
 
+.header-photo {
+    width: 100%;
+}
+
 .item {
     display: none;
 }
@@ -79,7 +83,7 @@ table {
 }
 
 button {
-    color: white;
+    color: black;
     font-style: bold;
     font-size: 1em;
     height: 5%;
