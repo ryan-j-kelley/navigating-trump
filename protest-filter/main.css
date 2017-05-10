@@ -63,16 +63,16 @@ table {
     width: 100%;
 }
 
-.item {
+.image {
     display: none;
 }
 
-.item.active {
+.image.show {
     display: block;
-    width: 50%;
+    width: 100%;
 }
 
-.item img {
+.image img {
     width: 100%;
 }
 
@@ -102,7 +102,6 @@ button {
     transition: .5s transform ease-in-out;
     backface-visibility: hidden;
     text-align: center;
-    padding: 20px;
     margin: 10px;
     border-style: solid;
     box-sizing: border-box;
@@ -116,8 +115,7 @@ button {
 .item {
     position: relative;
     float: left;
-    width: 50%;
-    padding-bottom: 60%;
+    width: 100%;
 }
 
 .item.active {
