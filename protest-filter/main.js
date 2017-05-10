@@ -8,8 +8,9 @@ $(document).ready(function () {
 			$(".image").removeClass("show");
 		} else {
 			$(".image").addClass("show");
-			// $(".image").removeClass("show");
-			// $(".image" + ".show" + filter).toggleClass("show");
+			// this is what makes the initial image show when you click the button
+
+			//write something that makes the reset button also reset the social media links, not just clear it
 		}
 
 	});
@@ -18,12 +19,15 @@ $(document).ready(function () {
 
 		var item = $(this);
 
-		if (item.hasClass("active")) {
-			item.removeClass("active");
-		} else {
-			item.addClass("active");
-		}
+		item.addClass("active");
+		// this makes this image flip
 
-	});
+		// if (item.hasClass("active")) {
+		// 	item.removeClass("active");
+		// 	} else {
+		// 		item.addClass("active");
+	}); //this made the image flip back and forth
 
 });
+
+// });

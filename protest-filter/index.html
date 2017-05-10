@@ -9,11 +9,13 @@
         <!-- first step to a responsive site -->
         <title>HTML Skeleton</title>
 
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
 
         <!-- Your styles should be called here -->
 
         <link rel="stylesheet" type="text/css" href="main.css">
+
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,10 +28,16 @@
     <body>
         <!-- YOUR CONTENT GOES HERE -->
 
+        <h1>The First 100 Days</h1>
+        <h2>Through the eyes of the protestor</h2>
+        <h3>By Ryan Kelley, Lucy Huang, Christina Dabney, Alana Pipe and Oscar Gonzalez</h3>
+
         <figure>
             <img class="header-photo" src="images/crowd.jpg">
-            <figcaption>Protestors gather in Washington, D.C. for the Women's March on January 21, 2017, one day after President Trump's inauguration. (Photo by Alana Pipe)</figcaption>
+            <figcaption class="caption">Protestors gather in Washington, D.C. for the Women's March on January 21, 2017, one day after President Trump's inauguration. (Photo by Alana Pipe)</figcaption>
         </figure>
+
+        <br>
 
         <div class="buttons">
             <button id="women_button" class="filter" data-filter="women">Women</button>
@@ -48,13 +56,21 @@
             <div class="women item">
                 <div class="front">
                     <figure><img src="images/babywithsign.jpg"></figure>
-                    <figcaption></figcaption>
+                    <figcaption class="caption">This is a caption about this photo. (Photo By A Photographer)</figcaption>
+                    <p class="body-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
                 <div class="back">
-                    <figure class="flip"><img src="images/bikecops.jpg"></figure>
+                    <blockquote class="twitter-tweet" data-lang="en">
+                        <p lang="en" dir="ltr">Overhead shot in Washington, D.C. shows massive crowds in every direction rallying for Women&#39;s March on Washington <a href="https://t.co/tO5Wmqm5Vb">https://t.co/tO5Wmqm5Vb</a> <a href="https://t.co/YFwLBkF5nU">pic.twitter.com/YFwLBkF5nU</a></p>&mdash;
+                        ABC News (@ABC) <a href="https://twitter.com/ABC/status/822919782215335939">January 21, 2017</a></blockquote>
+                    <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <!-- <figure class="flip"><img src="images/bikecops.jpg"></figure> -->
+                    <!-- this is where the social media posts will go instead of this image -->
                 </div>
             </div>
         </div>
+        <!-- repeat this structure for each image that flips and shows social media posts -->
 
 
 
