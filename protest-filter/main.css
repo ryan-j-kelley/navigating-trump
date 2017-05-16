@@ -88,19 +88,6 @@ h3 {
     margin-top: 20px;
 }
 
-.image {
-    display: none;
-}
-
-.image.show {
-    display: block;
-    width: 100%;
-}
-
-.image img {
-    width: 100%;
-}
-
 .body-text {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
@@ -136,6 +123,19 @@ button {
 
 /* For Flip*/
 
+.item {
+    display: none;
+    width: 100%;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item.active {
+    display: block;
+}
+
 .item .front, .item .back {
     position: absolute;
     top: 0;
@@ -161,15 +161,15 @@ button {
     width: 100%;
 }
 
-.item.active {
+.item.flipped {
     transform: rotateY(180deg) scaleX(-1);
 }
 
-.item.active .front {
+.item.flipped .front {
     transform: rotateY(-180deg);
 }
 
-.item.active .back {
+.item.flipped .back {
     transform: rotateY(0deg);
 }
 

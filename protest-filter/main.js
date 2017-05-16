@@ -4,22 +4,18 @@ $(document).ready(function () {
 		var button = $(this);
 		var filter = button.data("filter");
 
-		if (filter === "reset") {
-			$(".image").removeClass("show");
-		} else {
-			$(".image").addClass("show");
-			// this is what makes the initial image show when you click the button
+		$(".item.active").removeClass("active").removeClass("flipped");
 
-			//write something that makes the reset button also reset the social media links, not just clear it
+		if (filter !== "reset") {
+			$("." + filter).addClass("active");
 		}
-
 	});
 
 	$(".item").on("click", function (e) {
 
 		var item = $(this);
 
-		item.addClass("active");
+		item.addClass("flipped");
 		// this makes this image flip
 
 		// if (item.hasClass("active")) {
